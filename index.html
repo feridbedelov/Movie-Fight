@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Roboto:400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css" />
+  <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-overlay"></div>
+    <div class="header-showcase">
+      <div class="header-logo">euphoria.</div>
+
+      <div class='showcase-text'>
+        <h1>In Movies We Trust!</h1>
+        <p>Search two movies and compare them</p>
+        <a class="link-button" href="#compare" >Discover</a>
+      </div>
+    </div>
+
+
+  </header>
+
+  <div class="container " id="compare">
+
+    <div class="columns is-desktop">
+      <div class="column">
+        <div id="left-autoComplete"></div>
+        <div id="left-summary"></div>
+      </div>
+      <div class="column">
+        <div id="right-autoComplete"></div>
+        <div id="right-summary"></div>
+      </div>
+    </div>
+    <div class="column is-half notification is-primary tutorial">
+      <h2 class="title">Search for a movie on both sides</h2>
+      <p class="subtitle">We will tell you which is the best!</p>
+    </div>
+
+  </div>
+
+  <footer>
+    Copyright <span id="year"></span>
+  </footer>
+
+
+
+  <script src="./js/util.js"></script>
+  <script src="./js/autoComplete.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
